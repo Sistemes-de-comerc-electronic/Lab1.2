@@ -36,7 +36,7 @@ composer create-project symfony/skeleton lab1
 
 > **Important:** Podeu usar `Documents`, `Descargas`, `Escritorio`... però **mai** sota la carpeta de XAMPP.
 
-<!-- TODO: imatge terminal amb la comanda create-project executant-se (sortides en groc normals) -->
+![Terminal create-project Symfony](docs/symfony-create-project.png)
 
 Quan hagi acabat, entreu a la carpeta creada:
 
@@ -46,7 +46,7 @@ cd lab1
 
 Veureu que hi ha varis fitxers, entre ells `composer.json` i `composer.lock`:
 
-<!-- TODO: imatge estructura de fitxers del projecte Symfony -->
+![Estructura de fitxers del projecte Symfony](docs/symfony-project-structure.png)
 
 ---
 
@@ -60,13 +60,13 @@ Aneu al directori del vostre projecte i executeu:
 symfony server:start
 ```
 
-<!-- TODO: imatge terminal amb symfony server:start funcionant -->
+![Terminal symfony server:start funcionant](docs/symfony-server-start.png)
 
 Per provar-ho entreu a la url:
 
 http://localhost:8000/
 
-<!-- TODO: imatge pàgina per defecte de Symfony al navegador -->
+![Pàgina per defecte de Symfony al navegador](docs/symfony-default-page.png)
 
 > **Important:** Si tanqueu el terminal, Symfony es deixarà d'executar.
 
@@ -88,7 +88,7 @@ Si us segueix sense funcionar, feu mail a david.domenech@urv.cat
 
 Symfony haurà creat aquestes carpetes principals:
 
-<!-- TODO: imatge estructura de carpetes Symfony (src/, templates/, config/, public/) -->
+![Estructura de carpetes Symfony](docs/symfony-folders.png)
 
 Dins de `src/Controller` és on creareu els vostres controladors.
 
@@ -157,7 +157,7 @@ En aquest fitxer posarem un HTML simple amb una variable:
 <h1>El número és {{ number }}</h1>
 ```
 
-<!-- TODO: imatge fitxer hello_demo.html.twig al PHPStorm -->
+![Fitxer hello_demo.html.twig al PHPStorm](docs/twig-hello-demo.png)
 
 Al controlador farem que retorni aquest twig (i passarem el valor de la variable):
 
@@ -189,7 +189,7 @@ Si entreu a la url podeu veure com ha carregat el twig:
 
 http://127.0.0.1:8000/hello/demo
 
-<!-- TODO: imatge resultat al navegador -->
+![Resultat al navegador amb el twig carregat](docs/twig-result.png)
 
 - Què passa si al controlador afegim una variable extra cap al twig?
 - I si al twig posem una variable que no existeix al controlador?
@@ -209,13 +209,13 @@ composer require --dev symfony/maker-bundle
 
 > Si us pregunta si voleu executar una recepta, dieu que **no**:
 
-<!-- TODO: imatge pregunta recepta al terminal -->
+![Pregunta recepta de Doctrine al terminal](docs/doctrine-recipe.png)
 
 ### 4.2 Configurar el `.env`
 
 Obriu el fitxer `.env` i busqueu la secció de variables d'entorn de base de dades:
 
-<!-- TODO: imatge fitxer .env amb la secció DATABASE_URL -->
+![Fitxer .env amb la secció DATABASE_URL](docs/env-database.png)
 
 Per defecte surt una variable de PostgreSQL. La sobreescriurem amb la de MySQL del XAMPP.
 
@@ -225,7 +225,7 @@ http://localhost/phpmyadmin
 
 I creeu una nova base de dades:
 
-<!-- TODO: imatge phpMyAdmin creant nova BD -->
+![phpMyAdmin creant nova base de dades](docs/phpmyadmin-create-db.png)
 
 Poseu el nom que vulgueu, per exemple `lab_bd`.
 
@@ -255,11 +255,11 @@ Al codi crearem l'entitat `Car` amb la comanda:
 php bin/console make:entity
 ```
 
-<!-- TODO: imatge terminal fent make:entity -->
+![Terminal fent make:entity](docs/make-entity.png)
 
 Symfony ens haurà creat una entitat `Car` dins de `src/Entity`:
 
-<!-- TODO: imatge estructura src/Entity/ -->
+![Estructura src/Entity/ al PHPStorm](docs/entity-structure.png)
 
 Si l'obrim hauríem de tenir:
 
@@ -361,7 +361,7 @@ Al twig posem:
 
 I veurem com surt la info del cotxe amb id 1:
 
-<!-- TODO: imatge resultat al navegador amb el nom del cotxe -->
+![Resultat al navegador amb el nom del cotxe](docs/car-name-result.png)
 
 ---
 
