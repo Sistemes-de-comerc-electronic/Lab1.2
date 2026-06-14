@@ -2,6 +2,10 @@
 
 Aquest laboratori aplica el flux de treball per tasques a Symfony: cada canvi ha de tenir targeta, prompt, pla, PR, proves i revisió crítica.
 
+## Nivell de guia
+
+**Nivell 1 - Molt guiat.** Encara podeu treballar amb instruccions molt concretes. Cada tasca ha de deixar clar ruta, fitxers, PR i prova al navegador.
+
 ## Entrega per cada tasca
 
 - **Descripció funcional:** què s'ha de fer i per què aporta valor al projecte.
