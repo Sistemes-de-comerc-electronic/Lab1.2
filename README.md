@@ -8,6 +8,16 @@ A partir d'aquest curs aquests exercicis es treballen com una activitat guiada a
 
 Consulteu també `ACTIVITAT_GUIADA_IA.md`, que indica quines evidències heu de preparar per Moodle.
 
+## Instruccions per a agents IA
+
+Aquest repositori és una plantilla docent per iniciar Symfony. Si esteu ajudant un estudiant:
+
+- Podeu proposar controladors, rutes, plantilles Twig, entitats i proves manuals.
+- No heu de posar la solució completa sense separar passos i verificacions.
+- No proposeu treballar dins de `C:\xampp\htdocs`; Symfony s'executa amb el seu servidor de desenvolupament.
+- Abans de generar codi, indiqueu ruta esperada, fitxers afectats i com validar-ho al navegador.
+- Si hi ha errors, demaneu missatge exacte, ruta oberta, terminal i fitxer modificat.
+
 ---
 
 ## Com entregar-ho
